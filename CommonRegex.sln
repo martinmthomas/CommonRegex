@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2006
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonRegex", "CommonRegex\CommonRegex.csproj", "{EEBA14F0-32D1-40E0-989E-F6B91FB2B04E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonRegex.Tests", "CommonRegex.Tests\CommonRegex.Tests.csproj", "{40E1F2A1-F40E-4690-A34D-88BF1B1085B0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EEBA14F0-32D1-40E0-989E-F6B91FB2B04E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEBA14F0-32D1-40E0-989E-F6B91FB2B04E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEBA14F0-32D1-40E0-989E-F6B91FB2B04E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEBA14F0-32D1-40E0-989E-F6B91FB2B04E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40E1F2A1-F40E-4690-A34D-88BF1B1085B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40E1F2A1-F40E-4690-A34D-88BF1B1085B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40E1F2A1-F40E-4690-A34D-88BF1B1085B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40E1F2A1-F40E-4690-A34D-88BF1B1085B0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {157152CD-3EE8-4BFA-BBFF-C2701505A9CE}
+	EndGlobalSection
+EndGlobal
