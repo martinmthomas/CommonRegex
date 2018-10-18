@@ -6,8 +6,10 @@ namespace CommonRegex
 {
     public static class Postcode
     {
-        public const string Australia = @"^(([1-9]\d{3})|(0[1-9]\d{2}))$";
-        public const string NewZealand = @"^(([1-9]\d{3})|(0[1-9]\d{2}))$";
-        public const string Singapore = @"^(([1-9]\d{5})|(0[1-9]\d{4}))$";
+        public const string AUSTRALIA = @"^(([1-9]\d{3})|(0[1-9]\d{2}))$";
+        public const string NEWZEALAND = @"^(([1-9]\d{3})|(0[1-9]\d{2}))$";
+        public const string SINGAPORE = @"^(([1-9]\d{5})|(0[1-9]\d{4}))$";
+        public const string ISRAEL = @"^([1-9]\d{6})$";
+        public const string US = @"^(([1-9]\d{4})|(0[1-9]\d{3})|(00[1-9]\d{2}))$";
     }
 }
