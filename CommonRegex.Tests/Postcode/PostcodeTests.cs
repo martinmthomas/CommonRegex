@@ -12,71 +12,40 @@ namespace CommonRegex.Tests
         public void AUS_postcode()
         {
             new CommonRegexAssert("Australian Postcode", Postcode.AUSTRALIA)
-                .IsValid("2000")
-                .IsValid("4200")
-                .IsValid("0832")
-                .IsInvalid("900")
-                .IsInvalid("80001")
-                .IsInvalid("100a")
-                .IsInvalid("")
-                .IsInvalid("0032")
-                .IsInvalid("")
-                ;
+                .IsValid(new string[] { "2000", "4200", "0832" })
+                .IsInvalid(new string[] { "", "900", "80001", "100a", "0032" });
         }
 
         [TestMethod]
         public void NZ_postcode()
         {
             new CommonRegexAssert("New Zealand Postcode", Postcode.NEWZEALAND)
-                .IsValid("0626")
-                .IsValid("7110")
-                .IsValid("0832")
-                .IsInvalid("900")
-                .IsInvalid("80001")
-                .IsInvalid("100a")
-                .IsInvalid("0032")
-                .IsInvalid("")
-                ;
+                .IsValid(new string[] { "0626", "7110", "0832" })
+                .IsInvalid(new string[] { "", "900", "80001", "100a", "0032" });
         }
 
         [TestMethod]
         public void Singapore_postcode()
         {
             new CommonRegexAssert("Singapore Postcode", Postcode.SINGAPORE)
-                .IsValid("758391")
-                .IsValid("099253")
-                .IsInvalid("2000")
-                .IsInvalid("7583910")
-                .IsInvalid("post11")
-                .IsInvalid("000999")
-                .IsInvalid("")
-                ;
+                .IsValid(new string[] { "758391", "099253" })
+                .IsInvalid(new string[] { "", "2000", "7583910", "post11", "000999" });
         }
 
         [TestMethod]
         public void Israel_postcode()
         {
             new CommonRegexAssert("Israel Postcode", Postcode.ISRAEL)
-                .IsValid("7583912")
-                .IsValid("9925000")
-                .IsInvalid("2000")
-                .IsInvalid("75839101")
-                .IsInvalid("0112999")
-                .IsInvalid("")
-                ;
+                .IsValid(new string[] { "7583912", "9925000" })
+                .IsInvalid(new string[] { "", "2000", "75839101", "0112999" });
         }
 
         [TestMethod]
         public void US_postcode()
         {
             new CommonRegexAssert("US Postcode", Postcode.US)
-                .IsValid("01501")
-                .IsValid("00501")
-                .IsValid("10003")
-                .IsInvalid("00051")
-                .IsInvalid("3245")
-                .IsInvalid("")
-                ;
+                .IsValid(new string[] { "01501", "00501", "10003" })
+                .IsInvalid(new string[] { "", "00051", "3245" });
         }
     }
 }

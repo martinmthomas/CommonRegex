@@ -25,15 +25,19 @@ namespace CommonRegex.Tests
             Assert.AreEqual(expectedResult, actual, validationMesg);
         }
 
-        public CommonRegexAssert IsValid(string input)
+        public CommonRegexAssert IsValid(string[] inputs)
         {
-            AssertRegex(input, true);
+            foreach (var input in inputs)
+                AssertRegex(input, true);
+
             return this;
         }
 
-        public CommonRegexAssert IsInvalid(string input)
+        public CommonRegexAssert IsInvalid(string[] inputs)
         {
-            AssertRegex(input, false);
+            foreach (var input in inputs)
+                AssertRegex(input, false);
+
             return this;
         }
     }
